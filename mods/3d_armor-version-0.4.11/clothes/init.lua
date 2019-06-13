@@ -151,14 +151,14 @@ armor:register_armor("clothes:boots_police", {
 armor:register_armor("clothes:boots_military", {
 	description = ("Miitary Boots"),
 	inventory_image = "clothes_inv_boots_military.png",
-	groups = {armor_feet=2, armor_heal=0, armor_use=800},
+	groups = {armor_feet=2, clothing=1, armor_heal=0, armor_use=800},
 	armor_groups = {fleshy=0},
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:boots_hiking", {
 	description = ("Hiking Boots"),
 	inventory_image = "clothes_inv_boots_hiking.png",
-	groups = {armor_feet=2, armor_heal=0, armor_use=800},
+	groups = {armor_feet=2, clothing=1, armor_heal=0, armor_use=800},
 	armor_groups = {fleshy=0},
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
@@ -190,5 +190,164 @@ armor:register_armor("clothes:pants_prisoner", {
 	armor_groups = {fleshy=0},
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
+
+-- Clothing by Cyber_Shinobi
+-- SNIPER
+armor:register_armor("clothes:army_helmet_sniper", {
+	description = ("Sniper Hood"),
+	inventory_image = "clothes_inv_helmet_sniper.png",
+	groups = {armor_head=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_jacket_sniper", {
+	description = ("Sniper Jacket"),
+	inventory_image = "clothes_inv_jacket_sniper.png",
+	groups = {armor_torso=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_pants_sniper", {
+	description = ("Sniper Pants"),
+	inventory_image = "clothes_inv_pants_sniper.png",
+	groups = {armor_legs=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_boots_sniper", {
+	description = ("Sniper Boots"),
+	inventory_image = "clothes_inv_boots_sniper.png",
+	groups = {armor_feet=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+-- TERRORIST
+armor:register_armor("clothes:army_helmet_gasmask", {
+	description = ("Gas Mask"),
+	inventory_image = "clothes_inv_helmet_gasmask.png",
+	groups = {armor_head=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_jacket_terror", {
+	description = ("Terrorist Jacket"),
+	inventory_image = "clothes_inv_jacket_terror.png",
+	groups = {armor_torso=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_pants_terror", {
+	description = ("Terrorist Pants"),
+	inventory_image = "clothes_inv_pants_terror.png",
+	groups = {armor_legs=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+armor:register_armor("clothes:army_boots_terror", {
+	description = ("Terrorist Boots"),
+	inventory_image = "clothes_inv_boots_terror.png",
+	groups = {armor_feet=3, clothing=1, armor_heal=0, armor_use=800},
+	armor_groups = {fleshy=0},
+	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+-- Cyber_Shinobi clothes for CityWar
+-- Shirts
+armor:register_armor("clothes:army_shirt_green", {
+    description = ("Green army shirt"),
+    inventory_image = "clothes_inv_army_shirt_green.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_shirt_grey", {
+    description = ("Grey army shirt"),
+    inventory_image = "clothes_inv_army_shirt_grey.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_shirt_cream", {
+    description = ("Cream army shirt"),
+    inventory_image = "clothes_inv_army_shirt_cream.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_shirt_black", {
+    description = ("Black army shirt"),
+    inventory_image = "clothes_inv_army_shirt_black.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+-- Pants
+armor:register_armor("clothes:army_pants_green", {
+    description = ("Green army pants"),
+    inventory_image = "clothes_inv_army_pants_green.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_pants_grey", {
+    description = ("Grey army pants"),
+    inventory_image = "clothes_inv_army_pants_grey.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_pants_cream", {
+    description = ("Cream army pants"),
+    inventory_image = "clothes_inv_army_pants_cream.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_pants_black", {
+    description = ("Black army pants"),
+    inventory_image = "clothes_inv_army_pants_black.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+-- Boots
+armor:register_armor("clothes:army_boots_green", {
+    description = ("Green army boots"),
+    inventory_image = "clothes_inv_army_boots_green.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_boots_grey", {
+    description = ("Grey army boots"),
+    inventory_image = "clothes_inv_army_boots_grey.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_boots_cream", {
+    description = ("Cream army boots"),
+    inventory_image = "clothes_inv_army_boots_cream.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+armor:register_armor("clothes:army_boots_black", {
+    description = ("Black army boots"),
+    inventory_image = "clothes_inv_army_boots_black.png",
+    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    armor_groups ={fleshy=0},
+    damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
+})
+
+
 local modpath = minetest.get_modpath("clothes")
 dofile(modpath.."/loom.lua")
