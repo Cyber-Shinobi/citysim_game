@@ -1,1 +1,1 @@
-CitySim [citysim_game]
+CityWar [citywar_game]
