@@ -233,7 +233,7 @@ armor:register_armor("clothes:army_helmet_gasmask", {
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 
-armor:register_armor("clothes:army_jacket_terror", {
+armor:register_armor("clothes:jacket_terror", {
 	description = ("Terrorist Jacket"),
 	inventory_image = "clothes_inv_jacket_terror.png",
 	groups = {armor_torso=3, clothing=1, armor_heal=0, armor_use=800},
@@ -241,7 +241,7 @@ armor:register_armor("clothes:army_jacket_terror", {
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 
-armor:register_armor("clothes:army_pants_terror", {
+armor:register_armor("clothes:pants_terror", {
 	description = ("Terrorist Pants"),
 	inventory_image = "clothes_inv_pants_terror.png",
 	groups = {armor_legs=3, clothing=1, armor_heal=0, armor_use=800},
@@ -249,7 +249,7 @@ armor:register_armor("clothes:army_pants_terror", {
 	damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 
-armor:register_armor("clothes:army_boots_terror", {
+armor:register_armor("clothes:boots_terror", {
 	description = ("Terrorist Boots"),
 	inventory_image = "clothes_inv_boots_terror.png",
 	groups = {armor_feet=3, clothing=1, armor_heal=0, armor_use=800},
@@ -262,28 +262,28 @@ armor:register_armor("clothes:army_boots_terror", {
 armor:register_armor("clothes:army_shirt_green", {
     description = ("Green army shirt"),
     inventory_image = "clothes_inv_army_shirt_green.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_torso=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_shirt_grey", {
     description = ("Grey army shirt"),
     inventory_image = "clothes_inv_army_shirt_grey.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_torso=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_shirt_cream", {
     description = ("Cream army shirt"),
     inventory_image = "clothes_inv_army_shirt_cream.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_torso=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_shirt_black", {
     description = ("Black army shirt"),
     inventory_image = "clothes_inv_army_shirt_black.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_torso=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
@@ -292,28 +292,28 @@ armor:register_armor("clothes:army_shirt_black", {
 armor:register_armor("clothes:army_pants_green", {
     description = ("Green army pants"),
     inventory_image = "clothes_inv_army_pants_green.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_legs=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_pants_grey", {
     description = ("Grey army pants"),
     inventory_image = "clothes_inv_army_pants_grey.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_legs=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_pants_cream", {
     description = ("Cream army pants"),
     inventory_image = "clothes_inv_army_pants_cream.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_legs=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_pants_black", {
     description = ("Black army pants"),
     inventory_image = "clothes_inv_army_pants_black.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_legs=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
@@ -322,28 +322,28 @@ armor:register_armor("clothes:army_pants_black", {
 armor:register_armor("clothes:army_boots_green", {
     description = ("Green army boots"),
     inventory_image = "clothes_inv_army_boots_green.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_feet=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_boots_grey", {
     description = ("Grey army boots"),
     inventory_image = "clothes_inv_army_boots_grey.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_feet=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_boots_cream", {
     description = ("Cream army boots"),
     inventory_image = "clothes_inv_army_boots_cream.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_feet=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
 armor:register_armor("clothes:army_boots_black", {
     description = ("Black army boots"),
     inventory_image = "clothes_inv_army_boots_black.png",
-    groups = {armor_legs=2, clothing=1, armor_heal=0, armor_use=200},
+    groups = {armor_feet=1, clothing=1, armor_heal=0, armor_use=200},
     armor_groups ={fleshy=0},
     damage_groups = {cracky=2, snappy=3, choppy=2, crumbly=1, level=2},
 })
