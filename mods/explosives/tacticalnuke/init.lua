@@ -1,0 +1,70 @@
+local def = {
+	name = "tacticalnuke:explosion",
+	description = "tacticalnuke Explosion (you hacker you!)",
+	radius = 16,
+	tiles = {
+		side = "tacticalnuke_pow.png",
+		top = "tacticalnuke_pow.png",
+		bottom = "tacticalnuke_pow.png",
+		burning = "tacticalnuke_pow.png"
+	},
+}
+
+tnt.register_tnt(def)
+
+
+minetest.register_craftitem("tacticalnuke:tacticalnuke", {
+	description = "tactical pocket nuke(TACTICAL POCKET NUKE INCOMING!!!)",
+	range = 0,
+	stack_max= 3,
+	inventory_image = "tacticalnuke_tacticalnuke.png",
+	on_use = function(itemstack, user, pointed_thing)
+			if not minetest.setting_getbool("creative_mode") then itemstack:take_item()
+		end
+		if pointed_thing.type ~= "nothing" then
+			local pointed = minetest.get_pointed_thing_position(pointed_thing)
+			if vector.distance(user:getpos(), pointed) < 8 then
+				return itemstack
+			end
+		end
+		local pos = user:getpos()
+		local dir = user:get_look_dir()
+		local yaw = user:get_look_yaw()
+		if pos and dir then
+			pos.y = pos.y + 1.5
+			local obj = minetest.add_entity(pos, "tacticalnuke:tacticalnuke")
+			if obj then
+				minetest.sound_play("tacticalnuke", {object=obj})
+				obj:setvelocity({x=dir.x * 15, y=dir.y * 15, z=dir.z * 15})
+				obj:setacceleration({x=dir.x * -3, y=-10, z=dir.z * -3})
+				obj:setyaw(yaw + math.pi)
+				local ent = obj:get_luaentity()
+				if ent then
+					ent.player = ent.player or user
+				end
+			end
+		end
+		return itemstack
+	end,
+})
+
+
+minetest.register_entity("tacticalnuke:tacticalnuke", {
+	physical = true,
+	collide_with_objects = true,
+	collisionbox = {-0.25, -0.25, -0.25, 0.25, 0.25, 0.25},
+	weight = 0,
+	textures = {"tacticalnuke_tacticalnuke.png"},
+	on_activate = function(self, staticdata)
+		self.timer = 0
+	end,
+	on_step = function(self, dtime)
+		local acc = self.object:getacceleration()
+		self.object:setacceleration({x = acc.x * 1 / 1, y = acc.y, z = acc.z * 1 / 1})
+
+		self.timer = self.timer + dtime
+		if self.timer > 10 then
+			tnt.boom(self.object:getpos(), def)
+		end
+	end,
+})
